@@ -29,6 +29,7 @@ const { json } = require('stream/consumers');
 //const deta = JSON.parse(dataJSON);
 
 const detaBuffer = fs.readFileSync('1-json.json');
+// toStringで文字列に変換
 const DetaJSON = detaBuffer.toString();
 //console.log(DetaJSON);
 const parseDeta = JSON.parse(DetaJSON);
