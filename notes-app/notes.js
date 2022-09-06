@@ -32,7 +32,7 @@ const removeNote = function (title) {
     console.log(chalk.green.inverse('Note removed!'))
     saveNotes(notesToKeep);
   } else {
-    console.log(chalk.ted.inverse('No note found!'))
+    console.log(chalk.red.inverse('No note found!'))
   }
 }
 
