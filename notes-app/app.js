@@ -57,7 +57,7 @@ yargs.command({
   command: 'read',
   describe: 'Read a notes',
   builder: {
-    list: {
+    title: {
       describe: 'Note title',
       demandOption: true,
       type: 'string'
