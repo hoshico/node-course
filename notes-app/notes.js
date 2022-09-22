@@ -6,17 +6,19 @@ const getNotes = () => "Your notes...";
 
 const addNote = (title, body) => {
   const notes = loadNotes();
-  const duplicateNote = notes.find((note) = note.title === title);
+  const duplicateNote = notes.find((note) => note.title === title);
 
+  debugger
+  
   if (!duplicateNote) {
     notes.push({
       title: title,
       body: body
     });
     saveNotes(notes);
-    console.log("New note added");
+    console.log(chalk.green.inverse("New note added"));
   } else {
-    console.log("Note title taken!")
+    console.log(chalk.red.inverse("Note title taken!"))
   }
 };
 
